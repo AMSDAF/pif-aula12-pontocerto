@@ -4,8 +4,8 @@
 
 | Papel | Nome completo | Usuário do GitHub |
 |---|---|---|
-| Integrante 1 (dono do fork) | | |
-| Integrante 2 (colaborador) | | |
+| Antonio Marcos (dono do fork) | Antônio Marcos SOares de Araujo | AMSDAF|
+| Arthur Cabral (colaborador) | Arthur Cabral tietzmann | ArthurCabralTietzmann|
 
 ## Explicação da solução
 
