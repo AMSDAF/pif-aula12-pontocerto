@@ -24,8 +24,10 @@ campanhaMultiplicadora 5 devolve uma função, não um número: a lambda \p -> p
 ## Desafio 4
 
 **a)** <!-- Por que as duas ordens dão resultados diferentes? -->
+A ordem muda o resultado: 150×5+200 = 950, mas (150+200)×5 = 1750. Na segunda, o bônus também é multiplicado.
 
 **b)** <!-- Qual ordem garante que o bônus de aniversário não seja multiplicado? Por quê? -->
+Primeiro blackFriday, depois aniversarioCliente, porque assim o bônus é somado depois da multiplicação e não é multiplicado.
 
 ## Desafio 5 — revisão de código
 
