@@ -40,24 +40,50 @@ Primeiro blackFriday, depois aniversarioCliente, porque assim o bônus é somado
 
 ## Desafio 6 — Haskell × C
 
-<!-- Cite duas diferenças entre o calculaPontos em Haskell e o calculaPontos em C. -->
+1. Em C não existem lambdas: toda regra precisa ser uma função nomeada. Em Haskell dá para passar \p -> p * 3 direto.
+2. Em C o tipo é um ponteiro, int (*regra)(int). Em Haskell é só Int -> Int.
 
 ## Evidência de execução
 
 Saída do `main` de `fidelidade.hs`:
 
 ```text
-(cole aqui)
+--- Desafio 1 ---
+120
+240
+170
+240
+--- Desafio 2 ---
+80
+160
+130
+240
+170
+--- Desafio 3 ---
+750
+350
+100
+55
+--- Desafio 4 ---
+950
+1750
+280
 ```
 
 Saída do `main` de `revisao.hs` (depois de corrigido):
 
 ```text
-(cole aqui)
+40
+100
+400
+200
 ```
 
 Saída de `pontocerto.c`:
 
 ```text
-(cole aqui)
+160
+130
+250
+300
 ```
