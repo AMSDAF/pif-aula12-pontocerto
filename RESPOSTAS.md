@@ -19,6 +19,7 @@ Usamos lambda porque cada promoção dura um dia e a regra é usada uma única v
 ## Desafio 3
 
 <!-- O que campanhaMultiplicadora 5 devolve? Um número ou outra coisa? Como o :t confirma isso? -->
+campanhaMultiplicadora 5 devolve uma função, não um número: a lambda \p -> p * 5, que ainda espera os pontos. O :t confirma, porque mostra campanhaMultiplicadora 5 :: Int -> Int. Se fosse número, o tipo seria só Int.
 
 ## Desafio 4
 
