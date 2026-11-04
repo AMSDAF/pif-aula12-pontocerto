@@ -33,10 +33,10 @@ Primeiro blackFriday, depois aniversarioCliente, porque assim o bônus é somado
 
 | Erro | Função | O que estava errado | Como o GHC avisou (resumo da mensagem) | Como corrigimos |
 |---|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
+| 1 | aplicaRegraDuasVezes | Assinatura Int -> Int -> Int diz que regra é um número, mas ela é chamada como função | Couldn't match expected type 'Int -> Int' with actual type 'Int' | (Int -> Int) -> Int -> Int |
+| 2 | fimDeSemana | Lambda escrita com => em vez de -> | parse error on input '=>' | (Int -> Int) -> Int -> Int |
+| 3 | natal | Faltou passar o bônus para a fábrica: campanhaBonus sozinha tem tipo Int -> (Int -> Int), não Int -> Int | Couldn't match type 'Int -> Int' with 'Int' | campanhaBonus 300|
+| 4 | promocaoAtual | pontosEmDobro 100 é um número (200), não uma regra; o tipo esperado é Int -> Int | Couldn't match expected type 'Int -> Int' with actual type 'Int' | promocaoAtual = pontosEmDobro|
 
 ## Desafio 6 — Haskell × C
 
