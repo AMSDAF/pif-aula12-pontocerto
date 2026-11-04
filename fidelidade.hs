@@ -18,6 +18,8 @@ campanhaDaSemana :: Int -> Int
 campanhaDaSemana = pontosEmDobro
 -- ---------- Desafio 2: uma funcao que recebe a regra ----------
 
+calculaPontos :: (Int -> Int) -> Int -> Int
+calculaPontos regra valor = regra valor
 
 -- ---------- Desafio 3: fabrica de campanhas ----------
 
@@ -36,11 +38,11 @@ main = do
   print (bonus50 120)
   print (campanhaDaSemana 120)
   putStrLn "--- Desafio 2 ---"
-  -- print (calculaPontos semCampanha 80)
-  -- print (calculaPontos pontosEmDobro 80)
-  -- print (calculaPontos bonus50 80)
-  -- Promocao Relampago (escrevam a chamada com lambda aqui):
-  -- Quarta Verde (escrevam a chamada com lambda aqui):
+  print (calculaPontos semCampanha 80)
+  print (calculaPontos pontosEmDobro 80)
+  print (calculaPontos bonus50 80)
+  print (calculaPontos (\p -> p * 3) 80)
+  print (calculaPontos (\p -> p * 2 + 10) 80)
   putStrLn "--- Desafio 3 ---"
   -- print (calculaPontos blackFriday 150)
   -- print (calculaPontos aniversarioCliente 150)

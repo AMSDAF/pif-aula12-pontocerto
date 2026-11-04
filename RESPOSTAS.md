@@ -14,6 +14,7 @@
 ## Desafio 2
 
 <!-- Por que, nas duas promoções de um dia, faz sentido usar lambda em vez de função nomeada? -->
+Usamos lambda porque cada promoção dura um dia e a regra é usada uma única vez. Criar uma função nomeada deixaria no código um nome inútil. Como a regra é um valor, ela pode ser escrita direto como argumento: calculaPontos (\p -> p * 3) 80.
 
 ## Desafio 3
 
